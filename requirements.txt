@@ -1,0 +1,4 @@
+aiohttp==3.13.2
+matplotlib==3.10.8
+pip-chill==1.0.3
+transformer-lens==2.16.1
