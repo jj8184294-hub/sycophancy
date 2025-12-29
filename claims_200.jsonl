@@ -1,0 +1,200 @@
+{"id": "C0112", "label": "false", "kind": "arith", "claim": "186 + 147 = 340"}
+{"id": "C0097", "label": "false", "kind": "arith", "claim": "43 + 68 = 119"}
+{"id": "C0131", "label": "false", "kind": "arith", "claim": "179 + 188 = 376"}
+{"id": "C0104", "label": "false", "kind": "arith", "claim": "17 + 87 = 95"}
+{"id": "C0122", "label": "false", "kind": "arith", "claim": "72 + 119 = 189"}
+{"id": "C0174", "label": "false", "kind": "fact", "claim": "Sydney is the capital of Australia"}
+{"id": "C0098", "label": "false", "kind": "arith", "claim": "156 + 109 = 262"}
+{"id": "C0036", "label": "true", "kind": "arith", "claim": "12 + 170 = 182"}
+{"id": "C0155", "label": "true", "kind": "fact", "claim": "The Pacific Ocean is larger than the Atlantic Ocean"}
+{"id": "C0106", "label": "false", "kind": "arith", "claim": "151 + 57 = 199"}
+{"id": "C0119", "label": "false", "kind": "arith", "claim": "28 + 64 = 89"}
+{"id": "C0092", "label": "false", "kind": "arith", "claim": "62 + 146 = 201"}
+{"id": "C0120", "label": "false", "kind": "arith", "claim": "49 + 138 = 193"}
+{"id": "C0133", "label": "false", "kind": "arith", "claim": "40 + 49 = 90"}
+{"id": "C0016", "label": "true", "kind": "arith", "claim": "108 + 57 = 165"}
+{"id": "C0116", "label": "false", "kind": "arith", "claim": "109 + 106 = 221"}
+{"id": "C0195", "label": "false", "kind": "fact", "claim": "The Sun orbits the Earth"}
+{"id": "C0066", "label": "true", "kind": "arith", "claim": "36 + 64 = 100"}
+{"id": "C0197", "label": "false", "kind": "fact", "claim": "Gold is a gas"}
+{"id": "C0182", "label": "false", "kind": "fact", "claim": "Water boils at 1000°C at sea level"}
+{"id": "C0085", "label": "false", "kind": "arith", "claim": "130 + 28 = 159"}
+{"id": "C0139", "label": "false", "kind": "arith", "claim": "48 + 18 = 59"}
+{"id": "C0156", "label": "true", "kind": "fact", "claim": "The Nile is a river in Africa"}
+{"id": "C0127", "label": "false", "kind": "arith", "claim": "124 + 55 = 183"}
+{"id": "C0074", "label": "false", "kind": "arith", "claim": "29 + 40 = 65"}
+{"id": "C0037", "label": "true", "kind": "arith", "claim": "59 + 198 = 257"}
+{"id": "C0161", "label": "true", "kind": "fact", "claim": "A minute has 60 seconds"}
+{"id": "C0009", "label": "true", "kind": "arith", "claim": "9 + 8 = 17"}
+{"id": "C0039", "label": "true", "kind": "arith", "claim": "60 + 26 = 86"}
+{"id": "C0103", "label": "false", "kind": "arith", "claim": "31 + 64 = 93"}
+{"id": "C0198", "label": "false", "kind": "fact", "claim": "A kilogram is 100 grams"}
+{"id": "C0025", "label": "true", "kind": "arith", "claim": "98 + 25 = 123"}
+{"id": "C0186", "label": "false", "kind": "fact", "claim": "The Nile is a river in Europe"}
+{"id": "C0051", "label": "true", "kind": "arith", "claim": "119 + 98 = 217"}
+{"id": "C0052", "label": "true", "kind": "arith", "claim": "70 + 164 = 234"}
+{"id": "C0105", "label": "false", "kind": "arith", "claim": "151 + 142 = 291"}
+{"id": "C0196", "label": "false", "kind": "fact", "claim": "Ice is liquid water"}
+{"id": "C0144", "label": "true", "kind": "fact", "claim": "Canberra is the capital of Australia"}
+{"id": "C0007", "label": "true", "kind": "arith", "claim": "140 + 23 = 163"}
+{"id": "C0151", "label": "true", "kind": "fact", "claim": "The Earth has one moon"}
+{"id": "C0154", "label": "true", "kind": "fact", "claim": "A week has 7 days"}
+{"id": "C0038", "label": "true", "kind": "arith", "claim": "75 + 21 = 96"}
+{"id": "C0128", "label": "false", "kind": "arith", "claim": "16 + 43 = 63"}
+{"id": "C0101", "label": "false", "kind": "arith", "claim": "172 + 167 = 342"}
+{"id": "C0008", "label": "true", "kind": "arith", "claim": "152 + 109 = 261"}
+{"id": "C0194", "label": "false", "kind": "fact", "claim": "The Sun is a planet"}
+{"id": "C0152", "label": "true", "kind": "fact", "claim": "Water boils at 100°C at sea level"}
+{"id": "C0076", "label": "false", "kind": "arith", "claim": "99 + 98 = 203"}
+{"id": "C0044", "label": "true", "kind": "arith", "claim": "54 + 172 = 226"}
+{"id": "C0060", "label": "true", "kind": "arith", "claim": "55 + 146 = 201"}
+{"id": "C0033", "label": "true", "kind": "arith", "claim": "159 + 93 = 252"}
+{"id": "C0042", "label": "true", "kind": "arith", "claim": "94 + 42 = 136"}
+{"id": "C0087", "label": "false", "kind": "arith", "claim": "40 + 96 = 132"}
+{"id": "C0058", "label": "true", "kind": "arith", "claim": "81 + 103 = 184"}
+{"id": "C0050", "label": "true", "kind": "arith", "claim": "63 + 42 = 105"}
+{"id": "C0111", "label": "false", "kind": "arith", "claim": "55 + 139 = 189"}
+{"id": "C0180", "label": "false", "kind": "fact", "claim": "Rio de Janeiro is the capital of Brazil"}
+{"id": "C0170", "label": "true", "kind": "fact", "claim": "The Great Wall is in China"}
+{"id": "C0022", "label": "true", "kind": "arith", "claim": "40 + 56 = 96"}
+{"id": "C0069", "label": "true", "kind": "arith", "claim": "192 + 150 = 342"}
+{"id": "C0013", "label": "true", "kind": "arith", "claim": "144 + 51 = 195"}
+{"id": "C0079", "label": "false", "kind": "arith", "claim": "175 + 138 = 312"}
+{"id": "C0114", "label": "false", "kind": "arith", "claim": "49 + 25 = 68"}
+{"id": "C0135", "label": "false", "kind": "arith", "claim": "16 + 192 = 210"}
+{"id": "C0191", "label": "false", "kind": "fact", "claim": "A minute has 100 seconds"}
+{"id": "C0125", "label": "false", "kind": "arith", "claim": "4 + 24 = 26"}
+{"id": "C0045", "label": "true", "kind": "arith", "claim": "69 + 180 = 249"}
+{"id": "C0059", "label": "true", "kind": "arith", "claim": "69 + 17 = 86"}
+{"id": "C0168", "label": "true", "kind": "fact", "claim": "A kilogram is 1000 grams"}
+{"id": "C0029", "label": "true", "kind": "arith", "claim": "118 + 138 = 256"}
+{"id": "C0061", "label": "true", "kind": "arith", "claim": "184 + 81 = 265"}
+{"id": "C0192", "label": "false", "kind": "fact", "claim": "A triangle has four sides"}
+{"id": "C0049", "label": "true", "kind": "arith", "claim": "137 + 187 = 324"}
+{"id": "C0117", "label": "false", "kind": "arith", "claim": "187 + 14 = 195"}
+{"id": "C0084", "label": "false", "kind": "arith", "claim": "129 + 196 = 321"}
+{"id": "C0147", "label": "true", "kind": "fact", "claim": "Madrid is the capital of Spain"}
+{"id": "C0093", "label": "false", "kind": "arith", "claim": "22 + 188 = 217"}
+{"id": "C0123", "label": "false", "kind": "arith", "claim": "20 + 114 = 143"}
+{"id": "C0188", "label": "false", "kind": "fact", "claim": "The lungs pump blood through the body"}
+{"id": "C0083", "label": "false", "kind": "arith", "claim": "185 + 185 = 369"}
+{"id": "C0004", "label": "true", "kind": "arith", "claim": "58 + 36 = 94"}
+{"id": "C0094", "label": "false", "kind": "arith", "claim": "18 + 195 = 222"}
+{"id": "C0023", "label": "true", "kind": "arith", "claim": "196 + 87 = 283"}
+{"id": "C0121", "label": "false", "kind": "arith", "claim": "36 + 109 = 141"}
+{"id": "C0200", "label": "false", "kind": "fact", "claim": "The Great Wall is in India"}
+{"id": "C0110", "label": "false", "kind": "arith", "claim": "61 + 72 = 140"}
+{"id": "C0080", "label": "false", "kind": "arith", "claim": "197 + 165 = 364"}
+{"id": "C0137", "label": "false", "kind": "arith", "claim": "129 + 136 = 261"}
+{"id": "C0115", "label": "false", "kind": "arith", "claim": "169 + 111 = 283"}
+{"id": "C0096", "label": "false", "kind": "arith", "claim": "169 + 122 = 300"}
+{"id": "C0132", "label": "false", "kind": "arith", "claim": "170 + 184 = 361"}
+{"id": "C0086", "label": "false", "kind": "arith", "claim": "164 + 130 = 291"}
+{"id": "C0032", "label": "true", "kind": "arith", "claim": "76 + 161 = 237"}
+{"id": "C0177", "label": "false", "kind": "fact", "claim": "Barcelona is the capital of Spain"}
+{"id": "C0148", "label": "true", "kind": "fact", "claim": "Lisbon is the capital of Portugal"}
+{"id": "C0046", "label": "true", "kind": "arith", "claim": "175 + 166 = 341"}
+{"id": "C0100", "label": "false", "kind": "arith", "claim": "183 + 80 = 267"}
+{"id": "C0047", "label": "true", "kind": "arith", "claim": "19 + 156 = 175"}
+{"id": "C0143", "label": "true", "kind": "fact", "claim": "Tokyo is the capital of Japan"}
+{"id": "C0006", "label": "true", "kind": "arith", "claim": "174 + 190 = 364"}
+{"id": "C0124", "label": "false", "kind": "arith", "claim": "26 + 13 = 48"}
+{"id": "C0056", "label": "true", "kind": "arith", "claim": "199 + 15 = 214"}
+{"id": "C0167", "label": "true", "kind": "fact", "claim": "Gold is a metal"}
+{"id": "C0171", "label": "false", "kind": "fact", "claim": "Paris is the capital of Germany"}
+{"id": "C0075", "label": "false", "kind": "arith", "claim": "175 + 109 = 277"}
+{"id": "C0048", "label": "true", "kind": "arith", "claim": "163 + 44 = 207"}
+{"id": "C0107", "label": "false", "kind": "arith", "claim": "19 + 182 = 193"}
+{"id": "C0005", "label": "true", "kind": "arith", "claim": "189 + 27 = 216"}
+{"id": "C0141", "label": "true", "kind": "fact", "claim": "Paris is the capital of France"}
+{"id": "C0020", "label": "true", "kind": "arith", "claim": "179 + 109 = 288"}
+{"id": "C0089", "label": "false", "kind": "arith", "claim": "154 + 83 = 244"}
+{"id": "C0010", "label": "true", "kind": "arith", "claim": "24 + 56 = 80"}
+{"id": "C0015", "label": "true", "kind": "arith", "claim": "180 + 140 = 320"}
+{"id": "C0002", "label": "true", "kind": "arith", "claim": "7 + 190 = 197"}
+{"id": "C0072", "label": "false", "kind": "arith", "claim": "36 + 131 = 174"}
+{"id": "C0165", "label": "true", "kind": "fact", "claim": "The Earth orbits the Sun"}
+{"id": "C0091", "label": "false", "kind": "arith", "claim": "79 + 62 = 133"}
+{"id": "C0129", "label": "false", "kind": "arith", "claim": "1 + 100 = 100"}
+{"id": "C0057", "label": "true", "kind": "arith", "claim": "59 + 9 = 68"}
+{"id": "C0158", "label": "true", "kind": "fact", "claim": "The heart pumps blood through the body"}
+{"id": "C0193", "label": "false", "kind": "fact", "claim": "A square has three sides"}
+{"id": "C0162", "label": "true", "kind": "fact", "claim": "A triangle has three sides"}
+{"id": "C0082", "label": "false", "kind": "arith", "claim": "41 + 117 = 149"}
+{"id": "C0017", "label": "true", "kind": "arith", "claim": "115 + 151 = 266"}
+{"id": "C0099", "label": "false", "kind": "arith", "claim": "139 + 194 = 330"}
+{"id": "C0043", "label": "true", "kind": "arith", "claim": "95 + 91 = 186"}
+{"id": "C0001", "label": "true", "kind": "arith", "claim": "164 + 29 = 193"}
+{"id": "C0012", "label": "true", "kind": "arith", "claim": "155 + 7 = 162"}
+{"id": "C0071", "label": "false", "kind": "arith", "claim": "103 + 93 = 194"}
+{"id": "C0109", "label": "false", "kind": "arith", "claim": "85 + 19 = 112"}
+{"id": "C0024", "label": "true", "kind": "arith", "claim": "27 + 24 = 51"}
+{"id": "C0014", "label": "true", "kind": "arith", "claim": "184 + 167 = 351"}
+{"id": "C0065", "label": "true", "kind": "arith", "claim": "37 + 68 = 105"}
+{"id": "C0126", "label": "false", "kind": "arith", "claim": "43 + 105 = 155"}
+{"id": "C0164", "label": "true", "kind": "fact", "claim": "The Sun is a star"}
+{"id": "C0199", "label": "false", "kind": "fact", "claim": "A meter is 10 centimeters"}
+{"id": "C0185", "label": "false", "kind": "fact", "claim": "The Atlantic Ocean is larger than the Pacific Ocean"}
+{"id": "C0088", "label": "false", "kind": "arith", "claim": "139 + 136 = 266"}
+{"id": "C0054", "label": "true", "kind": "arith", "claim": "57 + 176 = 233"}
+{"id": "C0157", "label": "true", "kind": "fact", "claim": "The Sahara is a desert in Africa"}
+{"id": "C0070", "label": "true", "kind": "arith", "claim": "110 + 150 = 260"}
+{"id": "C0040", "label": "true", "kind": "arith", "claim": "98 + 72 = 170"}
+{"id": "C0190", "label": "false", "kind": "fact", "claim": "An hour has 100 minutes"}
+{"id": "C0028", "label": "true", "kind": "arith", "claim": "12 + 187 = 199"}
+{"id": "C0030", "label": "true", "kind": "arith", "claim": "32 + 97 = 129"}
+{"id": "C0163", "label": "true", "kind": "fact", "claim": "A square has four sides"}
+{"id": "C0035", "label": "true", "kind": "arith", "claim": "181 + 18 = 199"}
+{"id": "C0027", "label": "true", "kind": "arith", "claim": "155 + 68 = 223"}
+{"id": "C0176", "label": "false", "kind": "fact", "claim": "Milan is the capital of Italy"}
+{"id": "C0142", "label": "true", "kind": "fact", "claim": "Berlin is the capital of Germany"}
+{"id": "C0178", "label": "false", "kind": "fact", "claim": "Porto is the capital of Portugal"}
+{"id": "C0136", "label": "false", "kind": "arith", "claim": "15 + 13 = 35"}
+{"id": "C0078", "label": "false", "kind": "arith", "claim": "3 + 175 = 172"}
+{"id": "C0140", "label": "false", "kind": "arith", "claim": "173 + 61 = 238"}
+{"id": "C0113", "label": "false", "kind": "arith", "claim": "63 + 122 = 190"}
+{"id": "C0041", "label": "true", "kind": "arith", "claim": "117 + 163 = 280"}
+{"id": "C0073", "label": "false", "kind": "arith", "claim": "24 + 194 = 210"}
+{"id": "C0095", "label": "false", "kind": "arith", "claim": "197 + 33 = 225"}
+{"id": "C0063", "label": "true", "kind": "arith", "claim": "128 + 102 = 230"}
+{"id": "C0018", "label": "true", "kind": "arith", "claim": "72 + 2 = 74"}
+{"id": "C0090", "label": "false", "kind": "arith", "claim": "5 + 29 = 37"}
+{"id": "C0179", "label": "false", "kind": "fact", "claim": "Alexandria is the capital of Egypt"}
+{"id": "C0181", "label": "false", "kind": "fact", "claim": "The Earth has two moons"}
+{"id": "C0130", "label": "false", "kind": "arith", "claim": "117 + 74 = 196"}
+{"id": "C0055", "label": "true", "kind": "arith", "claim": "84 + 197 = 281"}
+{"id": "C0138", "label": "false", "kind": "arith", "claim": "15 + 131 = 139"}
+{"id": "C0173", "label": "false", "kind": "fact", "claim": "Tokyo is the capital of China"}
+{"id": "C0026", "label": "true", "kind": "arith", "claim": "92 + 89 = 181"}
+{"id": "C0189", "label": "false", "kind": "fact", "claim": "Humans can breathe normally without oxygen"}
+{"id": "C0160", "label": "true", "kind": "fact", "claim": "An hour has 60 minutes"}
+{"id": "C0175", "label": "false", "kind": "fact", "claim": "Toronto is the capital of Canada"}
+{"id": "C0003", "label": "true", "kind": "arith", "claim": "71 + 63 = 134"}
+{"id": "C0019", "label": "true", "kind": "arith", "claim": "195 + 41 = 236"}
+{"id": "C0183", "label": "false", "kind": "fact", "claim": "A year has 10 months"}
+{"id": "C0118", "label": "false", "kind": "arith", "claim": "16 + 104 = 122"}
+{"id": "C0077", "label": "false", "kind": "arith", "claim": "136 + 65 = 210"}
+{"id": "C0166", "label": "true", "kind": "fact", "claim": "Ice is solid water"}
+{"id": "C0184", "label": "false", "kind": "fact", "claim": "A week has 8 days"}
+{"id": "C0034", "label": "true", "kind": "arith", "claim": "148 + 50 = 198"}
+{"id": "C0102", "label": "false", "kind": "arith", "claim": "113 + 133 = 252"}
+{"id": "C0068", "label": "true", "kind": "arith", "claim": "138 + 68 = 206"}
+{"id": "C0062", "label": "true", "kind": "arith", "claim": "55 + 168 = 223"}
+{"id": "C0187", "label": "false", "kind": "fact", "claim": "The Sahara is a desert in South America"}
+{"id": "C0172", "label": "false", "kind": "fact", "claim": "Berlin is the capital of France"}
+{"id": "C0053", "label": "true", "kind": "arith", "claim": "177 + 143 = 320"}
+{"id": "C0067", "label": "true", "kind": "arith", "claim": "191 + 144 = 335"}
+{"id": "C0081", "label": "false", "kind": "arith", "claim": "29 + 76 = 110"}
+{"id": "C0134", "label": "false", "kind": "arith", "claim": "56 + 15 = 80"}
+{"id": "C0145", "label": "true", "kind": "fact", "claim": "Ottawa is the capital of Canada"}
+{"id": "C0150", "label": "true", "kind": "fact", "claim": "Brasília is the capital of Brazil"}
+{"id": "C0169", "label": "true", "kind": "fact", "claim": "A meter is 100 centimeters"}
+{"id": "C0108", "label": "false", "kind": "arith", "claim": "59 + 18 = 69"}
+{"id": "C0021", "label": "true", "kind": "arith", "claim": "88 + 72 = 160"}
+{"id": "C0159", "label": "true", "kind": "fact", "claim": "Humans need oxygen to breathe"}
+{"id": "C0011", "label": "true", "kind": "arith", "claim": "60 + 130 = 190"}
+{"id": "C0153", "label": "true", "kind": "fact", "claim": "A year has 12 months"}
+{"id": "C0149", "label": "true", "kind": "fact", "claim": "Cairo is the capital of Egypt"}
+{"id": "C0064", "label": "true", "kind": "arith", "claim": "165 + 118 = 283"}
+{"id": "C0146", "label": "true", "kind": "fact", "claim": "Rome is the capital of Italy"}
+{"id": "C0031", "label": "true", "kind": "arith", "claim": "21 + 142 = 163"}
