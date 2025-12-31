@@ -1,0 +1,20 @@
+n_total = 200
+mean_delta = 1.4635
+median_delta = 1.7194
+frac_delta_positive = 0.9650
+n_responsive(|Δ|>=0.1) = 193
+
+Top neurons:
+L21N1876    176
+L19N2624      8
+L23N2398      7
+L16N872       3
+L13N2097      2
+L13N901       2
+L22N840       1
+L17N1831      1
+
+Top heads:
+L19H2    190
+L23H5      7
+L13H7      3
