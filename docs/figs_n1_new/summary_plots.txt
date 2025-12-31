@@ -1,0 +1,13 @@
+n_total = 200
+mean_delta = 1.4635
+median_delta = 1.7194
+frac_delta_positive = 0.9650
+n_responsive(|Δ| >= 0.1) = 193
+clip_recovery = 5.0
+
+fixed_layer_resid_recovery: n=193 mean=1.5797 median=1.4267
+fixed_head_recovery: n=193 mean=0.3230 median=0.2616
+fixed_neuron_recovery: n=193 mean=1.6065 median=1.3301
+
+Wrote recovery threshold table to:
+./figs_n1_new/fig4c_fixed_recovery_thresholds.csv
