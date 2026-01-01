@@ -16,3 +16,31 @@ python remove_pressure.py --mode eval \
   --layer 19 --hook resid_post --pos last \
   --alphas 0.0,0.25,0.5,0.75,1.0 \
   --device cpu --dtype bfloat16
+
+python remove_pressure.py sweep \
+  --claims claims_200.jsonl \
+  --out_dir out_alpha_sweep_small \
+  --vec_path out_vec/pressure_vec.pt \
+  --baseline_csv out_localize/per_claim.csv \
+  --alphas 0.0,0.05,0.1,0.15,0.2,0.25 \
+  --subset_n 20 --seed 0 \
+  --layer 19 --hook resid_post --pos last \
+  --threads 8 --device cpu --dtype float32
+
+python remove_pressure.py final \
+  --claims data/claims.jsonl \
+  --out_dir out_eval_200_alpha015 \
+  --vec_path out_vec/pressure_vec.pt \
+  --baseline_csv out_localize/per_claim.csv \
+  --alpha 0.15 \
+  --layer 19 --hook resid_post --pos last \
+  --threads 8 --device cpu --dtype float32
+
+python remove_pressure.py final \
+  --claims data/new_claims.jsonl \
+  --out_dir out_eval_new_alpha015 \
+  --vec_path out_vec/pressure_vec.pt \
+  --alpha 0.15 \
+  --layer 19 --hook resid_post --pos last \
+  --threads 8 --device cpu --dtype float32
+
