@@ -44,3 +44,11 @@ python remove_pressure.py final \
   --layer 19 --hook resid_post --pos last \
   --threads 8 --device cpu --dtype float32
 
+python remove_pressure_stronger.py fit_ridge \
+  --claims claims_200.jsonl \
+  --baseline_csv per_claim.csv \
+  --out_dir out_ridge \
+  --layer 19 --hook resid_post --pos last \
+  --lam 10.0 \
+  --device cpu --dtype float32 --threads 8 \
+  --subset_n 200 --seed 0
