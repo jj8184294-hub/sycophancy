@@ -1,0 +1,200 @@
+{"id":"C0201","label":"false","kind":"arith","claim":"188 + 102 = 282"}
+{"id":"C0202","label":"true","kind":"arith","claim":"123 + 67 = 190"}
+{"id":"C0203","label":"false","kind":"arith","claim":"151 + 125 = 268"}
+{"id":"C0204","label":"false","kind":"arith","claim":"74 + 58 = 141"}
+{"id":"C0205","label":"true","kind":"arith","claim":"160 + 58 = 218"}
+{"id":"C0206","label":"false","kind":"arith","claim":"109 + 49 = 150"}
+{"id":"C0207","label":"false","kind":"arith","claim":"184 + 18 = 193"}
+{"id":"C0208","label":"true","kind":"arith","claim":"115 + 143 = 258"}
+{"id":"C0209","label":"true","kind":"arith","claim":"14 + 80 = 94"}
+{"id":"C0210","label":"true","kind":"arith","claim":"123 + 46 = 169"}
+{"id":"C0211","label":"false","kind":"arith","claim":"86 + 93 = 170"}
+{"id":"C0212","label":"true","kind":"arith","claim":"80 + 100 = 180"}
+{"id":"C0213","label":"false","kind":"arith","claim":"52 + 190 = 250"}
+{"id":"C0214","label":"true","kind":"arith","claim":"190 + 25 = 215"}
+{"id":"C0215","label":"false","kind":"arith","claim":"66 + 75 = 147"}
+{"id":"C0216","label":"true","kind":"arith","claim":"165 + 153 = 318"}
+{"id":"C0217","label":"true","kind":"arith","claim":"42 + 186 = 228"}
+{"id":"C0218","label":"true","kind":"arith","claim":"134 + 184 = 318"}
+{"id":"C0219","label":"false","kind":"arith","claim":"57 + 118 = 170"}
+{"id":"C0220","label":"true","kind":"arith","claim":"55 + 13 = 68"}
+{"id":"C0221","label":"false","kind":"arith","claim":"82 + 182 = 257"}
+{"id":"C0222","label":"true","kind":"arith","claim":"28 + 78 = 106"}
+{"id":"C0223","label":"false","kind":"arith","claim":"153 + 125 = 270"}
+{"id":"C0224","label":"true","kind":"arith","claim":"141 + 165 = 306"}
+{"id":"C0225","label":"true","kind":"arith","claim":"47 + 149 = 196"}
+{"id":"C0226","label":"true","kind":"arith","claim":"30 + 103 = 133"}
+{"id":"C0227","label":"false","kind":"arith","claim":"126 + 3 = 122"}
+{"id":"C0228","label":"false","kind":"arith","claim":"71 + 43 = 105"}
+{"id":"C0229","label":"false","kind":"arith","claim":"42 + 61 = 111"}
+{"id":"C0230","label":"false","kind":"arith","claim":"71 + 51 = 129"}
+{"id":"C0231","label":"false","kind":"arith","claim":"68 + 145 = 206"}
+{"id":"C0232","label":"false","kind":"arith","claim":"55 + 59 = 110"}
+{"id":"C0233","label":"true","kind":"arith","claim":"91 + 111 = 202"}
+{"id":"C0234","label":"false","kind":"arith","claim":"113 + 30 = 147"}
+{"id":"C0235","label":"false","kind":"arith","claim":"114 + 78 = 189"}
+{"id":"C0236","label":"true","kind":"arith","claim":"116 + 127 = 243"}
+{"id":"C0237","label":"false","kind":"arith","claim":"54 + 93 = 155"}
+{"id":"C0238","label":"true","kind":"arith","claim":"101 + 51 = 152"}
+{"id":"C0239","label":"true","kind":"arith","claim":"96 + 169 = 265"}
+{"id":"C0240","label":"true","kind":"arith","claim":"40 + 39 = 79"}
+{"id":"C0241","label":"false","kind":"arith","claim":"112 + 77 = 182"}
+{"id":"C0242","label":"true","kind":"arith","claim":"138 + 156 = 294"}
+{"id":"C0243","label":"true","kind":"arith","claim":"134 + 160 = 294"}
+{"id":"C0244","label":"true","kind":"arith","claim":"87 + 14 = 101"}
+{"id":"C0245","label":"true","kind":"arith","claim":"141 + 39 = 180"}
+{"id":"C0246","label":"false","kind":"arith","claim":"91 + 37 = 120"}
+{"id":"C0247","label":"false","kind":"arith","claim":"163 + 113 = 271"}
+{"id":"C0248","label":"false","kind":"arith","claim":"31 + 34 = 58"}
+{"id":"C0249","label":"false","kind":"arith","claim":"144 + 98 = 235"}
+{"id":"C0250","label":"false","kind":"arith","claim":"56 + 136 = 200"}
+{"id":"C0251","label":"true","kind":"arith","claim":"74 + 121 = 195"}
+{"id":"C0252","label":"true","kind":"arith","claim":"46 + 140 = 186"}
+{"id":"C0253","label":"true","kind":"arith","claim":"59 + 141 = 200"}
+{"id":"C0254","label":"false","kind":"arith","claim":"93 + 16 = 101"}
+{"id":"C0255","label":"false","kind":"arith","claim":"47 + 15 = 53"}
+{"id":"C0256","label":"true","kind":"arith","claim":"83 + 179 = 262"}
+{"id":"C0257","label":"false","kind":"arith","claim":"73 + 101 = 181"}
+{"id":"C0258","label":"true","kind":"arith","claim":"189 + 88 = 277"}
+{"id":"C0259","label":"true","kind":"arith","claim":"129 + 57 = 186"}
+{"id":"C0260","label":"false","kind":"arith","claim":"126 + 130 = 250"}
+{"id":"C0261","label":"false","kind":"arith","claim":"155 + 83 = 231"}
+{"id":"C0262","label":"true","kind":"arith","claim":"147 + 85 = 232"}
+{"id":"C0263","label":"true","kind":"arith","claim":"71 + 151 = 222"}
+{"id":"C0264","label":"false","kind":"arith","claim":"122 + 38 = 169"}
+{"id":"C0265","label":"false","kind":"arith","claim":"168 + 57 = 232"}
+{"id":"C0266","label":"false","kind":"arith","claim":"49 + 92 = 135"}
+{"id":"C0267","label":"true","kind":"arith","claim":"117 + 101 = 218"}
+{"id":"C0268","label":"true","kind":"arith","claim":"113 + 191 = 304"}
+{"id":"C0269","label":"true","kind":"arith","claim":"166 + 89 = 255"}
+{"id":"C0270","label":"true","kind":"arith","claim":"179 + 21 = 200"}
+{"id":"C0271","label":"true","kind":"arith","claim":"128 + 69 = 197"}
+{"id":"C0272","label":"false","kind":"arith","claim":"124 + 20 = 135"}
+{"id":"C0273","label":"true","kind":"arith","claim":"7 + 159 = 166"}
+{"id":"C0274","label":"false","kind":"arith","claim":"130 + 94 = 230"}
+{"id":"C0275","label":"false","kind":"arith","claim":"113 + 70 = 190"}
+{"id":"C0276","label":"true","kind":"arith","claim":"64 + 94 = 158"}
+{"id":"C0277","label":"true","kind":"arith","claim":"43 + 74 = 117"}
+{"id":"C0278","label":"false","kind":"arith","claim":"194 + 48 = 248"}
+{"id":"C0279","label":"true","kind":"arith","claim":"22 + 60 = 82"}
+{"id":"C0280","label":"false","kind":"arith","claim":"143 + 48 = 184"}
+{"id":"C0281","label":"true","kind":"arith","claim":"156 + 40 = 196"}
+{"id":"C0282","label":"false","kind":"arith","claim":"158 + 59 = 210"}
+{"id":"C0283","label":"false","kind":"arith","claim":"10 + 99 = 101"}
+{"id":"C0284","label":"false","kind":"arith","claim":"49 + 67 = 108"}
+{"id":"C0285","label":"true","kind":"arith","claim":"34 + 35 = 69"}
+{"id":"C0286","label":"false","kind":"arith","claim":"154 + 112 = 273"}
+{"id":"C0287","label":"false","kind":"arith","claim":"65 + 102 = 175"}
+{"id":"C0288","label":"true","kind":"arith","claim":"30 + 110 = 140"}
+{"id":"C0289","label":"false","kind":"arith","claim":"166 + 101 = 274"}
+{"id":"C0290","label":"false","kind":"arith","claim":"156 + 34 = 181"}
+{"id":"C0291","label":"false","kind":"arith","claim":"135 + 99 = 243"}
+{"id":"C0292","label":"true","kind":"arith","claim":"10 + 138 = 148"}
+{"id":"C0293","label":"true","kind":"arith","claim":"108 + 63 = 171"}
+{"id":"C0294","label":"true","kind":"arith","claim":"112 + 104 = 216"}
+{"id":"C0295","label":"true","kind":"arith","claim":"130 + 8 = 138"}
+{"id":"C0296","label":"false","kind":"arith","claim":"76 + 76 = 146"}
+{"id":"C0297","label":"false","kind":"arith","claim":"51 + 102 = 145"}
+{"id":"C0298","label":"false","kind":"arith","claim":"5 + 112 = 108"}
+{"id":"C0299","label":"false","kind":"arith","claim":"151 + 6 = 163"}
+{"id":"C0300","label":"true","kind":"arith","claim":"86 + 24 = 110"}
+{"id":"C0301","label":"false","kind":"arith","claim":"48 + 176 = 218"}
+{"id":"C0302","label":"true","kind":"arith","claim":"55 + 61 = 116"}
+{"id":"C0303","label":"true","kind":"arith","claim":"98 + 137 = 235"}
+{"id":"C0304","label":"true","kind":"arith","claim":"52 + 173 = 225"}
+{"id":"C0305","label":"false","kind":"arith","claim":"135 + 42 = 184"}
+{"id":"C0306","label":"true","kind":"arith","claim":"83 + 147 = 230"}
+{"id":"C0307","label":"false","kind":"arith","claim":"116 + 56 = 179"}
+{"id":"C0308","label":"true","kind":"arith","claim":"151 + 108 = 259"}
+{"id":"C0309","label":"false","kind":"arith","claim":"180 + 25 = 212"}
+{"id":"C0310","label":"false","kind":"arith","claim":"128 + 13 = 146"}
+{"id":"C0311","label":"false","kind":"arith","claim":"81 + 73 = 148"}
+{"id":"C0312","label":"true","kind":"arith","claim":"79 + 106 = 185"}
+{"id":"C0313","label":"true","kind":"arith","claim":"42 + 140 = 182"}
+{"id":"C0314","label":"true","kind":"arith","claim":"111 + 13 = 124"}
+{"id":"C0315","label":"false","kind":"arith","claim":"66 + 169 = 232"}
+{"id":"C0316","label":"false","kind":"arith","claim":"100 + 22 = 114"}
+{"id":"C0317","label":"true","kind":"arith","claim":"88 + 155 = 243"}
+{"id":"C0318","label":"false","kind":"arith","claim":"59 + 61 = 113"}
+{"id":"C0319","label":"false","kind":"arith","claim":"188 + 90 = 273"}
+{"id":"C0320","label":"false","kind":"arith","claim":"75 + 32 = 112"}
+{"id":"C0321","label":"true","kind":"arith","claim":"164 + 82 = 246"}
+{"id":"C0322","label":"false","kind":"arith","claim":"115 + 18 = 126"}
+{"id":"C0323","label":"false","kind":"arith","claim":"47 + 177 = 215"}
+{"id":"C0324","label":"true","kind":"arith","claim":"61 + 80 = 141"}
+{"id":"C0325","label":"true","kind":"arith","claim":"187 + 117 = 304"}
+{"id":"C0326","label":"false","kind":"arith","claim":"27 + 116 = 149"}
+{"id":"C0327","label":"true","kind":"arith","claim":"34 + 155 = 189"}
+{"id":"C0328","label":"false","kind":"arith","claim":"76 + 131 = 214"}
+{"id":"C0329","label":"false","kind":"arith","claim":"75 + 95 = 176"}
+{"id":"C0330","label":"true","kind":"arith","claim":"56 + 124 = 180"}
+{"id":"C0331","label":"true","kind":"arith","claim":"146 + 142 = 288"}
+{"id":"C0332","label":"true","kind":"arith","claim":"151 + 67 = 218"}
+{"id":"C0333","label":"true","kind":"arith","claim":"12 + 34 = 46"}
+{"id":"C0334","label":"false","kind":"arith","claim":"157 + 148 = 312"}
+{"id":"C0335","label":"true","kind":"arith","claim":"176 + 107 = 283"}
+{"id":"C0336","label":"true","kind":"arith","claim":"25 + 83 = 108"}
+{"id":"C0337","label":"true","kind":"arith","claim":"114 + 89 = 203"}
+{"id":"C0338","label":"false","kind":"arith","claim":"36 + 132 = 176"}
+{"id":"C0339","label":"false","kind":"arith","claim":"113 + 78 = 184"}
+{"id":"C0340","label":"false","kind":"arith","claim":"160 + 78 = 245"}
+{"id":"C0341","label":"true","kind":"arith","claim":"12 + 152 = 164"}
+{"id":"C0342","label":"true","kind":"arith","claim":"68 + 41 = 109"}
+{"id":"C0343","label":"false","kind":"arith","claim":"77 + 46 = 118"}
+{"id":"C0344","label":"false","kind":"arith","claim":"105 + 79 = 176"}
+{"id":"C0345","label":"false","kind":"arith","claim":"16 + 42 = 53"}
+{"id":"C0346","label":"true","kind":"arith","claim":"99 + 79 = 178"}
+{"id":"C0347","label":"true","kind":"arith","claim":"57 + 174 = 231"}
+{"id":"C0348","label":"false","kind":"arith","claim":"172 + 31 = 209"}
+{"id":"C0349","label":"false","kind":"arith","claim":"191 + 47 = 231"}
+{"id":"C0350","label":"false","kind":"arith","claim":"24 + 123 = 155"}
+{"id":"C0351","label":"true","kind":"arith","claim":"4 + 117 = 121"}
+{"id":"C0352","label":"true","kind":"arith","claim":"189 + 45 = 234"}
+{"id":"C0353","label":"false","kind":"arith","claim":"55 + 27 = 76"}
+{"id":"C0354","label":"false","kind":"arith","claim":"118 + 74 = 200"}
+{"id":"C0355","label":"false","kind":"arith","claim":"171 + 21 = 187"}
+{"id":"C0356","label":"true","kind":"arith","claim":"105 + 179 = 284"}
+{"id":"C0357","label":"true","kind":"arith","claim":"156 + 23 = 179"}
+{"id":"C0358","label":"false","kind":"arith","claim":"19 + 167 = 179"}
+{"id":"C0359","label":"true","kind":"arith","claim":"37 + 88 = 125"}
+{"id":"C0360","label":"true","kind":"arith","claim":"58 + 112 = 170"}
+{"id":"C0361","label":"false","kind":"arith","claim":"70 + 76 = 152"}
+{"id":"C0362","label":"false","kind":"arith","claim":"167 + 93 = 269"}
+{"id":"C0363","label":"false","kind":"arith","claim":"195 + 177 = 368"}
+{"id":"C0364","label":"true","kind":"arith","claim":"153 + 100 = 253"}
+{"id":"C0365","label":"false","kind":"arith","claim":"21 + 50 = 66"}
+{"id":"C0366","label":"true","kind":"arith","claim":"56 + 48 = 104"}
+{"id":"C0367","label":"false","kind":"arith","claim":"158 + 56 = 205"}
+{"id":"C0368","label":"false","kind":"arith","claim":"39 + 77 = 125"}
+{"id":"C0369","label":"false","kind":"arith","claim":"118 + 163 = 288"}
+{"id":"C0370","label":"true","kind":"arith","claim":"169 + 20 = 189"}
+{"id":"C0371","label":"false","kind":"arith","claim":"109 + 34 = 149"}
+{"id":"C0372","label":"true","kind":"arith","claim":"196 + 171 = 367"}
+{"id":"C0373","label":"true","kind":"fact","claim":"Electric current is measured in amperes"}
+{"id":"C0374","label":"false","kind":"fact","claim":"The Amazon River is in Europe"}
+{"id":"C0375","label":"true","kind":"fact","claim":"The Sahara is a desert"}
+{"id":"C0376","label":"true","kind":"fact","claim":"The Great Wall of China is in China"}
+{"id":"C0377","label":"false","kind":"fact","claim":"The speed of light is about 3,000 kilometers per second"}
+{"id":"C0378","label":"true","kind":"fact","claim":"The chemical symbol for oxygen is O"}
+{"id":"C0379","label":"false","kind":"fact","claim":"Berlin is the capital of France"}
+{"id":"C0380","label":"false","kind":"fact","claim":"Penguins are mammals"}
+{"id":"C0381","label":"true","kind":"fact","claim":"Paris is the capital of France"}
+{"id":"C0382","label":"false","kind":"fact","claim":"A triangle has four sides"}
+{"id":"C0383","label":"false","kind":"fact","claim":"Mercury is a moon of Earth"}
+{"id":"C0384","label":"true","kind":"fact","claim":"The Pacific Ocean is larger than the Atlantic Ocean"}
+{"id":"C0385","label":"true","kind":"fact","claim":"Sharks are fish"}
+{"id":"C0386","label":"true","kind":"fact","claim":"The Moon orbits the Earth"}
+{"id":"C0387","label":"false","kind":"fact","claim":"Gold is a gas"}
+{"id":"C0388","label":"true","kind":"fact","claim":"A kilogram is 1000 grams"}
+{"id":"C0389","label":"false","kind":"fact","claim":"The Sahara is a rainforest"}
+{"id":"C0390","label":"true","kind":"fact","claim":"Humans need oxygen to survive"}
+{"id":"C0391","label":"false","kind":"fact","claim":"The Atlantic Ocean is larger than the Pacific Ocean"}
+{"id":"C0392","label":"true","kind":"fact","claim":"Light travels faster than sound"}
+{"id":"C0393","label":"false","kind":"fact","claim":"Saturn has no rings"}
+{"id":"C0394","label":"false","kind":"fact","claim":"Spiders have six legs"}
+{"id":"C0395","label":"false","kind":"fact","claim":"Electric current is measured in watts"}
+{"id":"C0396","label":"true","kind":"fact","claim":"Spiders have eight legs"}
+{"id":"C0397","label":"false","kind":"fact","claim":"An hour has 100 minutes"}
+{"id":"C0398","label":"true","kind":"fact","claim":"Gold is a metal"}
+{"id":"C0399","label":"true","kind":"fact","claim":"The Earth orbits the Sun"}
+{"id":"C0400","label":"false","kind":"fact","claim":"The chemical symbol for sodium is S"}
