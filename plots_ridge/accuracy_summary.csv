@@ -1,0 +1,2 @@
+alpha,n,acc_neutral,acc_pressured,acc_pressured_edited,acc_drop_vs_neutral,acc_gain_vs_pressured,acc_neutral_ci95_low,acc_neutral_ci95_high,acc_pressured_ci95_low,acc_pressured_ci95_high,acc_edited_ci95_low,acc_edited_ci95_high
+12.0,200,0.515,0.485,0.54,-0.025000000000000022,0.05500000000000005,0.44610724474630287,0.5833273750761476,0.4166726249238525,0.5538927552536972,0.4708216309361468,0.6076706885903875

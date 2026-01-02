@@ -6,15 +6,17 @@ title: Mechanistic Analysis of Pressure-Induced “Agreeing” in Qwen1.5-0.5B-C
 
 ## Abstract
 
-This report presents an initial mechanistic analysis of a **pressure-induced “agreeing” (Yes-biased)** behavior in **Qwen1.5-0.5B-Chat**. We evaluate **200 labeled claims** (each labeled *true* or *false*) under two prompt framings: a neutral question and a socially-pressuring prompt that asks the assistant to agree. For each prompt, we quantify the model’s immediate yes/no tendency using a **next-token logit-difference score**:
+This report presents an initial mechanistic analysis of a **pressure-induced “agreeing” (Yes-biased / sycophantic)** behavior in **Qwen1.5-0.5B-Chat**. We evaluate **200 labeled claims** (true/false) under two prompt framings: a neutral question and a socially-pressuring prompt that asks the assistant to agree. For each prompt, we quantify immediate yes/no tendency using a **next-token logit-difference score**:
 
 - **score = logit(" yes") − logit(" no")**
 
-For each claim, the **pressure effect** is defined as **Δ = score_pressured − score_neutral**, measuring how much the pressure framing shifts the model toward “yes”. Across the dataset, pressure produces a large and highly consistent yes-shift (**mean Δ = 1.4635**, **median Δ = 1.7210**, and **96.5%** of claims have **Δ > 0**).
+For each claim, the **pressure effect** is defined as **Δ = score_pressured − score_neutral**, measuring how much pressure shifts the model toward “yes”. Across the dataset, pressure produces a large and highly consistent yes-shift (**mean Δ = 1.4635**, **median Δ = 1.7210**, **96.5%** have **Δ > 0**).
 
-To localize where this pressure signal is represented inside the network, we perform **suffix-aligned activation patching** at the final token position: patching pressured activations into the neutral run and measuring **recovery**, the fraction of the observed pressure effect reproduced by the patch. The most frequently selected mediators concentrate in late layers: the best component is most often **layer 19 resid_post** (179/200 claims). At finer granularity, the best attention head is most often **L19H2** (190/200 claims), and the best MLP neuron is most often **L21N1876** (176/200 claims), indicating a highly consistent internal locus for the agreeing shift under this prompt pair and metric.
+To localize where this pressure signal is represented inside the network, we perform **suffix-aligned activation patching** at the final token position: we patch pressured activations into the neutral run and measure **recovery**, the fraction of the observed pressure effect reproduced by the patch. The most frequently selected mediators concentrate in late layers: the best component is most often **layer 19 resid_post** (179/200 claims). At finer granularity, the best attention head is most often **L19H2** (190/200 claims), and the best MLP neuron is most often **L21N1876** (176/200 claims), indicating a highly consistent internal locus for the agreeing shift under this prompt pair and metric.
 
-Finally, we report a simple **true-vs-false score separation proxy** under each condition, defined as the difference between the mean score on true claims and the mean score on false claims (within the same prompt condition). Under this setup, the separation is small and decreases under pressure (**D_neutral = 0.1681**, **D_pressured = 0.0573**, **D_drop = −0.1108**), consistent with pressure pushing both true and false claims toward “yes” and thereby compressing their separation in this yes/no tendency metric. We conclude with limitations (single prompt pair, single-token metric) and practical next steps for improving robustness and interpretability.
+We then test whether this localized signal can be **suppressed by a simple linear intervention**. Using the original 200-claim set, we learn a single **pressure direction** at **L19 resid_post (final token)** via **ridge regression** from activation differences to Δ. On a **new held-out set of 200 claims**, subtracting this direction with **α = 12** produces a **large, consistent Δ-reduction** (**mean = 1.367**, **100% improved**) and is a clear outlier compared to **50 random directions** (random mean Δ-reduction ranges **[−0.321, 0.356]**, with **0/50** exceeding the ridge direction). Importantly, this edit **does not degrade accuracy**: neutral **0.515** (95% CI **[0.446, 0.583]**), pressured **0.485** (95% CI **[0.417, 0.554]**), and pressured+edit **0.540** (95% CI **[0.471, 0.608]**).
+
+Finally, we report a simple **true-vs-false score separation proxy** under each condition, defined as the difference between mean score on true claims and mean score on false claims. Under this setup, separation is small and decreases under pressure (**D_neutral = 0.1681**, **D_pressured = 0.0573**, **D_drop = −0.1108**), consistent with pressure pushing both true and false claims toward “yes” and compressing their separation in this yes/no tendency metric.
 
 ---
 
@@ -37,14 +39,14 @@ For each claim `{claim}`, we evaluate a neutral prompt and a pressured prompt (s
 
 ### 1.3 Dataset
 - **200** claims labeled **true/false**
-- Mixed kinds (e.g., fact, arithmetic)
+- Mixed kinds (fact, arithmetic, etc.)
 
 ---
 
 ## 2. Behavioral Metrics
 
 ### 2.1 Yes/No score
-For a prompt, define:
+For a prompt:
 - **score = logit(" yes") − logit(" no")** (next-token logits at the final position)
 
 Token IDs in this run:
@@ -61,8 +63,6 @@ Interpretation:
 ### 2.3 Truth discrimination
 Define discrimination under a condition:
 - **D = E[score | true] − E[score | false]**
-
-And:
 - **D_drop = D_pressured − D_neutral**
 
 ---
@@ -83,15 +83,15 @@ Let:
 - sN = score_neutral  
 - sP = score_pressured  
 - effect = (sP − sN) = Δ  
-- s_patch = score after patching pressured activations into the neutral run
+- s_patch = score after patching pressured activations into the neutral run  
 
 Define:
 - **recovery = (s_patch − sN) / (sP − sN)**
 
 Interpretation:
-- recovery ≈ 1: patched site is sufficient to reproduce the pressure effect
-- recovery ≈ 0: little mediation
-- recovery > 1: overshoot (possible due to nonlinear interactions or small Δ)
+- recovery ≈ 1: patched site is sufficient to reproduce the pressure effect  
+- recovery ≈ 0: little mediation  
+- recovery > 1: overshoot (nonlinear interactions / small Δ)
 
 ### 3.3 Localization stages
 1. **Layer scan**: patch `blocks.L.hook_resid_post` (last position) across all layers  
@@ -125,7 +125,7 @@ Discrimination metrics:
 ![Truth bars](figs_n1/fig3_truth_bars.png)
 
 Interpretation:
-- In this prompt framing and single-token Yes/No readout, truth separation is modest in neutral and shrinks under pressure because both true and false claims shift toward Yes.
+- In this prompt framing and single-token yes/no readout, truth separation is modest in neutral and shrinks under pressure because both true and false claims shift toward Yes.
 
 ### 4.3 Localization concentrates at late residual stream (Layer 19)
 Most frequently selected best (layer, component):
@@ -137,37 +137,19 @@ This suggests the pressure effect is most consistently expressed in the **post-b
 
 ### 4.4 Finer localization: attention head and MLP neuron, then fixed-candidate recovery distributions
 
-After the layer/component scan (Section 4.3) suggests the pressure effect is consistently expressed around late layers—especially **L19 resid_post**—we further localize within that region at finer granularity.
-
 **Head-level localization (within attention).**  
-For each claim, we take the **best attention layer** from the component scan (i.e., the layer whose `attn_out` patch yields the highest recovery), and then scan heads in that layer by patching **one head’s `hook_z`** (suffix-aligned at the last token). We record the head that gives the highest recovery for that claim.
-
 Top “best head” identity counts:
 - **L19H2**: 190 / 200  
 - L23H5: 7 / 200  
 - L13H7: 3 / 200  
 
-This indicates that, under this prompt pair and last-token patching protocol, **a single head (L19H2) is overwhelmingly the most consistent head-level mediator** of the pressure-induced Yes-shift.
-
 **Neuron-level localization (within MLP).**  
-Similarly, for each claim we take the **best MLP layer** from the component scan (best `mlp_out`), and then scan neurons by patching **one neuron’s `mlp.hook_post`** at the last token. To keep this tractable, the scan is restricted to the top-K neurons with largest \|Δactivation\| at the aligned final position, and we select the neuron with the highest recovery for that claim.
-
 Top “best neuron” identity counts:
 - **L21N1876**: 176 / 200  
 - L19N2624: 8 / 200  
 - L23N2398: 7 / 200  
 
-This suggests that **a single MLP feature (L21N1876) is repeatedly identified as the strongest neuron-level locus** for reproducing the pressured-vs-neutral score difference.
-
-**Recovery report for these components.**  
-The identity counts above show *consistency* (which head/neuron is most often selected), but they don’t show *magnitude* (how much of the pressure effect that unit reproduces across claims).
-
-To measure the typical quantitative mediation of specific units, we therefore also present recovery for three **fixed candidates**—chosen because they are the dominant identities in the best-of scans:
-
-- fixed layer: **L19 resid_post**
-- fixed head: **L19H2**
-- fixed neuron: **L21N1876**
-
+**Fixed-candidate recovery (responsive subset).**  
 All plots below are computed on the **responsive subset** (claims with \|Δ\| ≥ 0.1), using **suffix-aligned patch_last_n = 1**.
 
 **Figure 4. Fixed-candidate recovery CDFs (responsive subset)**  
@@ -179,12 +161,65 @@ All plots below are computed on the **responsive subset** (claims with \|Δ\| �
 ![Fixed candidate recovery histograms](figs_n1_new/fig4b_fixed_recovery_hists.png)
 
 **Interpretation**
-- **Fixed layer (L19 resid_post)** and **fixed neuron (L21N1876)** show recovery values that cluster around **~1** (often modestly above), meaning that **patching just these sites at the last token is frequently sufficient to reproduce most of the measured pressure effect** across many claims.
-- **Fixed head (L19H2)** typically yields **smaller recovery** than the layer/neuron candidates. This is consistent with the head being an important *upstream contributor*, while the effect becomes more fully expressed in the **residual stream** and/or **MLP features** downstream.
-- A small fraction of claims show **negative recovery** (patch moves opposite to Δ), and a noticeable fraction show **recovery > 1** (“overshoot”). Both are expected in nonlinear systems: patching a single internal site can interact with the remaining unpatched computation and sometimes amplify or flip the downstream logit-difference shift.
+- **Fixed layer (L19 resid_post)** and **fixed neuron (L21N1876)** show recoveries clustering around **~1** (often modestly above), meaning patching just these sites at the last token is frequently sufficient to reproduce most of the measured pressure effect.
+- **Fixed head (L19H2)** typically yields smaller recovery than the layer/neuron candidates, consistent with it being an important upstream contributor while the effect becomes more fully expressed in the residual stream / downstream MLP features.
+- Some claims show negative recovery or overshoot (>1), expected from nonlinear interactions.
 
-Overall, the combined picture is: **pressure-induced Yes-bias is highly consistently localized to late layers (especially around L19), with a dominant attention head (L19H2) and a dominant MLP feature (L21N1876), and the fixed-candidate recovery distributions show that only activating the single neuron candidate (L21N1876) is often close to sufficient to reproduce the effect across a broad set of claims.**
+---
 
+### 4.5 Pressure-direction editing at L19 resid_post: ridge direction generalizes and beats random directions
+
+This section tests whether the pressure signal localized at **L19 resid_post (final token)** can be **actively reduced** with a simple linear edit that generalizes to new claims.
+
+#### 4.5.1 Learning a “pressure direction” with ridge regression
+Using the original 200 claims, we form per-claim training pairs:
+
+- **xᵢ = hᵢ(P) − hᵢ(N)**, the activation difference at **`blocks.19.hook_resid_post`** (last token) between pressured and neutral runs  
+- **yᵢ = Δᵢ = scoreᵢ(P) − scoreᵢ(N)**
+
+We fit a ridge regressor **w** to predict Δ from activation differences:
+
+\[
+w \;=\;\arg\min_w \; \|Xw - y\|_2^2 \;+\; \lambda \|w\|_2^2
+\]
+
+We treat **w** as the learned **pressure direction** (optionally normalized before applying).
+
+#### 4.5.2 Applying the edit at test time
+On the held-out (new) 200-claim set, we apply the edit only to the **pressured run** at the **final token** of **L19 resid_post**:
+
+\[
+h' \;=\; h \;-\; \alpha \, w
+\]
+
+Metrics per claim:
+- \(\Delta = s_P - s_N\)
+- \(\Delta_{\text{edit}} = s_{P,\text{edit}} - s_N\)
+- **Δ-reduction** \(= \Delta - \Delta_{\text{edit}}\) (larger is better)
+
+#### 4.5.3 Random-direction control
+To verify the effect is not a generic artifact of subtracting *any* vector, we compare against **50 random directions** sampled with the **same norm** as the ridge direction and applied with the same α. For each direction, we compute **mean Δ-reduction** over the 200 held-out claims.
+
+**Figure 5. Mean Δ-reduction across random directions vs learned ridge direction**  
+![Random vs ridge delta reduction](../ridge_vs_random_hist_mean_delta_reduction.png)
+
+
+#### 4.5.4 Held-out results (α = 12)
+On the 200 held-out claims, the ridge direction robustly suppresses pressure sensitivity:
+- mean Δ-reduction = **1.366526**
+- median Δ-reduction = **1.372519**
+- p25 / p75 = **1.359111 / 1.382102**
+- frac improved = **1.0**
+
+Random-direction baseline (50 draws; same norm):
+- mean Δ-reduction ranges **[−0.321, 0.356]**
+- **0 / 50** random directions exceed the ridge direction’s mean Δ-reduction
+
+#### 4.5.5 Accuracy does not decay (held-out n = 200)
+Accuracy (and 95% CI):
+- neutral: **0.515** (CI **[0.446, 0.583]**)
+- pressured: **0.485** (CI **[0.417, 0.554]**)  *(pressure drops accuracy by ~0.03 vs neutral)*
+- pressured + edit: **0.540** (CI **[0.471, 0.608]**)  *(edit improves vs pressured by **+0.055** and vs neutral by **+0.025**)*
 
 ---
 
@@ -198,17 +233,15 @@ Under last-token activation patching, mediation is concentrated late (layer 19 r
 - attention head **L19H2**
 - MLP neuron **L21N1876**
 
-This is a strong starting point for mechanistic follow-ups, but does not yet establish a complete circuit nor guarantee robustness across paraphrases.
+### 5.3 From localization to control
+A single direction learned from L19 resid_post activation differences (ridge regression to Δ) can be subtracted at test time to robustly suppress pressure-induced “agreeing” on unseen claims. The random-direction control suggests this is not a generic effect of subtracting an arbitrary vector, and the accuracy numbers indicate the edit does not harm (and here slightly improves) correctness under this yes/no evaluation.
 
 ---
 
-## 6. Limitations and Future Works
-1. Fixed prompt template (may try different pressure mechanism and see whether 
-same neuron or head dominates).
-2. Single-token readout (“ yes” vs “ no”) may not reflect full answer behavior
-(may test different variant of agreeing and disagreeing answer rather than only
-“ yes” vs “ no”).
-3. Recovery can overshoot due to nonlinearities or small Δ.
-4. Dominant factor selection depends on the patching protocol (here: last-token only).
+## 6. Limitations and Future Work
+1. **Prompt robustness:** we show generalization to new claims under the same prompt pair; robustness across **different pressure framings / paraphrases** remains untested.
+2. **Single-token readout:** “ yes” vs “ no” may not reflect full answer behavior; extend to multiple agreement/disagreement variants or full-text evaluation.
+3. **Direction stability:** test whether the ridge direction transfers across different datasets, domains, and model sizes.
+4. **Circuit-level understanding:** recoveries identify consistent loci but do not yet establish a full causal circuit.
 
----
+
