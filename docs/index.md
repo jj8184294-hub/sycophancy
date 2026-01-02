@@ -201,7 +201,7 @@ Metrics per claim:
 To verify the effect is not a generic artifact of subtracting *any* vector, we compare against **50 random directions** sampled with the **same norm** as the ridge direction and applied with the same α. For each direction, we compute **mean Δ-reduction** over the 200 held-out claims.
 
 **Figure 5. Mean Δ-reduction across random directions vs learned ridge direction**  
-![Random vs ridge delta reduction](../ridge_vs_random_hist_mean_delta_reduction.png)
+![Random vs ridge delta reduction](figs_n1_new/ridge_vs_random_hist_mean_delta_reduction.png)
 
 
 #### 4.5.4 Held-out results (α = 12)
